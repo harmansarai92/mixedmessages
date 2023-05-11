@@ -3,15 +3,15 @@ const randomMeal = {
     sideMeal: ['strawberry', 'ice cream', 'tomato', 'potatoes'],
     drink: ['orange juice', 'cola', 'water', 'tea'],
     getRandomBaseMeal: function() {
-        randomBase = Math.floor(Math.random() * this.baseMeal.length -1);
+        randomBase = Math.floor(Math.random() * this.baseMeal.length);
         return this.baseMeal[randomBase];
     },
     getRandomSideMeal: function() {
-        randomSide = Math.floor(Math.random() * this.sideMeal.length - 1);
+        randomSide = Math.floor(Math.random() * this.sideMeal.length);
         return this.sideMeal[randomSide];
     },
     getRandomDrink: function() {
-        randomDrink = Math.floor(Math.random() * this.drink.length - 1);
+        randomDrink = Math.floor(Math.random() * this.drink.length);
         return this.drink[randomDrink];
     }
 }
