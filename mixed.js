@@ -1,8 +1,11 @@
-function getRandom(num) {
-    return Math.floor(Math.random() * 3);
+function getRandom() {
+    let randBaseMeal = Math.floor(Math.random() * baseMeal.length - 1);
+    let randMealAddition = Math.floor(Math.random() * mealAddition);
+    let randomDrink = Math.floor(Math.random() * 4);
 }
 
-let baseMeal = ['bacon', 'oats', 'tuna', 'toast'];
-let mealAddition = ['strawberry', 'ice cream', 'tomato', 'potatoes'];
-let drink = ['orange juice', 'cola', 'water', 'tea'];
-
+let randomMeal = {
+    baseMeal: ['bacon', 'oats', 'tuna', 'toast'],
+    sideMeal: ['strawberry', 'ice cream', 'tomato', 'potatoes'],
+    drink: ['orange juice', 'cola', 'water', 'tea']
+}
